@@ -1,0 +1,178 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    
+    .ov-img {
+            padding:1.5%;
+            padding-top: 10%;
+            border-radius: 40%; /* This will make the image circular */
+            
+            object-fit: cover; /* Ensures the image fills the entire space */
+            
+        }
+
+    .background {
+      background-image: url('images/123.jpg');
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer {
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .footer h3 {
+      color: #333;
+    }
+
+    .footer p {
+      color: #555;
+    }
+
+    .logo {
+      width: 50px; /* Adjust size as needed */
+      height: auto;
+      margin-right: 10px;
+    }
+    </style>
+</head>
+
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="ov-img" style="align-content: center;">
+        <img src="images/Medicine_reco1.png" alt="Project 1" style="height: 600px; width: 100%;">
+                        
+    </div>
+    
+    
+    <div>
+    <section id="about" class="py-5">
+        
+        <div class="container" style="text-align: justify; padding: 10%;">
+            <h2 class="text-center" style="text-align: center;">Medicine Recomendation using ML </h2>
+                       
+            <p  style="text-align: justify;">
+                The medicine recommendation system is a Python-based application that utilizes machine learning to predict diseases based on user-entered symptoms. Users interact with a user-friendly HTML interface to input their symptoms, which are then processed by a Flask backend. The backend uses a pre-trained machine learning model (svc.pkl) to predict the most likely disease. Upon predicting the disease, the system retrieves relevant information such as descriptions, precautions, medications, diets, and workouts associated with that disease. The Flask backend then renders this information on the HTML page, providing users with tailored recommendations and insights based on their symptoms.
+                <ol>
+                    <li>
+                        <b>HTML Form:</b>  Capture user symptoms and submit them to Flask backend.
+                    </li>&nbsp;
+                    <li>
+                        <b>Flask Backend (app.py):</b> Receive symptoms, predict disease using svc.pkl, fetch related information based on the disease, and render HTML templates with the results.
+                    </li>&nbsp;
+                    <li>
+                        <b>Machine Learning Model (svc.pkl):</b> Predict disease based on input symptoms.
+                    </li>&nbsp;
+                    <li>
+                        <b>Data Files (CSVs):</b> Store descriptions, precautions, medications, diets, workouts, and disease mappings for retrieval by Flask backend.
+                    </li>&nbsp;
+                </ol>
+                <p>
+                    By following these steps and ensuring the correct flow of data between HTML forms, Flask backend, model prediction, and data retrieval, we can create a robust medicine recommendation system based on symptoms.
+
+
+                </p>
+            </p>
+        </div>
+    </section>
+    </div>
+    
+    <div class="ov-img" style="align-items: center;">
+        
+        
+        <img src="images/Medicine_reco.png" alt="Project 1" style="height: 500px; width: 100%;">
+        &nbsp;
+        <img src="images/Medicine_reco1.png" alt="Project 1" style="height: 500px; width: 100%;">
+        &nbsp;
+        <img src="images/Medicine_reco2.png" alt="Project 1" style="height: 500px; width: 100%;">
+        &nbsp;
+        <img src="images/Medicine_reco3.png" alt="Project 1" style="height: 500px; width: 100%;">
+        &nbsp;
+        <img src="images/Medicine_reco4.png" alt="Project 1" style="height: 500px; width: 100%;">
+    </div>
+&nbsp;
+    
+    <span>&nbsp;&nbsp;</span>
+</body>
+
+
+
+<div class="background" >
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h3>Contact Us</h3>
+            <p><img src="images/Phone.png" alt="Gmail" class="logo" style="border-radius: 100%;"></p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+919834146770">+91 9834146770   </a>
+                <a href="tel:+919022440562">+91 9022440562</a>
+            </p>
+            <p>
+                    <img src="images/Gmail.png" alt="Gmail" class="logo" style="border-radius: 50%;">
+            </p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:babinwalehuzefa@gmail.com">babinwalehuzefa@gmail.com  </a>
+                
+            
+            </p>
+            <!-- <p><a href="mailto:priyankakotpalliwar2002@gmail.com">priyankakotpalliwar2002@gmail.com </p> -->
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h3>Follow Us</h3>
+            <a href="http://www.linkedin.com/in/huzefa-babinwale-44473b210" target="_blank"><img src="images/Linkedin.png" alt="LinkedIn" class="logo"></a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h3>PH Techno</h3>
+            <!-- Add your logo image here -->
+            <img src="images/Logo.png" alt="LOGO" class="logo">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+
+</html>
+
